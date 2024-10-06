@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Customer Feedback Survey</h1>
+    <p id="description">We'd love to hear your thoughts about our service!</p>
+
+    <form id="survey-form">
+      <!-- Name -->
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      
+      <!-- Email -->
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      
+      <!-- Age -->
+      <label id="number-label" for="number">Age:</label>
+      <input type="number" id="number" name="age" min="18" max="100" placeholder="Enter your age" required>
+      
+      <!-- Dropdown -->
+      <label for="dropdown">How did you hear about us?</label>
+      <select id="dropdown" name="source">
+        <option value="internet">Internet</option>
+        <option value="friend">Friend</option>
+        <option value="advertisement">Advertisement</option>
+      </select>
+
+      <!-- Radio Buttons -->
+      <p>How satisfied are you with our service?</p>
+      <label><input type="radio" name="satisfaction" value="very satisfied" required> Very Satisfied</label>
+      <label><input type="radio" name="satisfaction" value="satisfied"> Satisfied</label>
+      <label><input type="radio" name="satisfaction" value="unsatisfied"> Unsatisfied</label>
+
+      <!-- Checkboxes -->
+      <p>What features did you like?</p>
+      <label><input type="checkbox" name="features" value="quality"> Quality</label>
+      <label><input type="checkbox" name="features" value="speed"> Speed</label>
+      <label><input type="checkbox" name="features" value="customer service"> Customer Service</label>
+
+      <!-- Textarea -->
+      <label for="comments">Any comments or suggestions?</label>
+      <textarea id="comments" name="comments" placeholder="Write your feedback here..."></textarea>
+
+      <!-- Submit Button -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
